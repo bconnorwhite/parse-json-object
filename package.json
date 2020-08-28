@@ -20,6 +20,9 @@
     "build": "babel ./src --out-dir ./build --config-file ./babel.config.json --extensions .ts --delete-dir-on-start && tsc --project ./tsconfig.json",
     "prepublishOnly": "yarn build"
   },
+  "dependencies": {
+    "@bconnorwhite/json-types": "^1.0.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.1",
@@ -28,8 +31,5 @@
     "@babel/preset-typescript": "^7.10.4",
     "@types/node": "^14.0.27",
     "typescript": "^3.9.7"
-  },
-  "dependencies": {
-    "@bconnorwhite/json-types": "^1.0.2"
   }
 }
