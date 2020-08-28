@@ -30,6 +30,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "@bconnorwhite/json-types": "^1.0.1"
+    "@bconnorwhite/json-types": "^1.0.1",
+    "json-types": "^1.0.2"
   }
 }
