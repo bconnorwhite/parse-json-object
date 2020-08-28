@@ -880,10 +880,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@bconnorwhite/json-types@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@bconnorwhite/json-types/-/json-types-1.0.1.tgz#c32c558a7b9773b509d6415ced704dc403f1dac8"
-  integrity sha512-dHgBW4DYbna4858ngHfPtHF/Ifb8Ah6kB/w2WoG+PjseP/zYVoyx/K01D+Yv8iwJ+l22NTBrOaK5tT5n3t5MhA==
+"@bconnorwhite/json-types@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/json-types/-/json-types-1.0.2.tgz#6ad5d379ef04ad4eb37442b97f7113b994d44675"
+  integrity sha512-XQG8O9wVYdIGvIAkePDy9vI95yRHywPXsUE/SsX+Lu8AXNB9WtAsW86he71MFsZed94UOL1h5j6GALO328C5SA==
 
 "@types/node@^14.0.27":
   version "14.0.27"
@@ -1529,11 +1529,6 @@ jsesc@~0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha1-597mbjXW/Bb3EP6R1c9p9w8IkR0=
-
-json-types@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/json-types/-/json-types-1.0.2.tgz#f4a95f04b4565422aa84fdad487a4f4667619dc6"
-  integrity sha512-+tJ5aFigXBEd/jQVbWsApsz6hIon7neeUJC61E99S6kMYzZSYuRokaQR/n47ntljHlGT8G9XUgTbv5FrPu139w==
 
 json5@^2.1.2:
   version "2.1.3"
