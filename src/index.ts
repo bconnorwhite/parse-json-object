@@ -1,14 +1,10 @@
+import { isJSONObject, JSONObject, JSONValue, JSONArray } from "@bconnorwhite/json-types";
 
-export type JSONObject = {
-  [Key in string]?: JSONValue
-};
-
-export type JSONValue = string | number | boolean | null | JSONObject | JSONArray;
-
-export interface JSONArray extends Array<JSONValue> {}
-
-export function isJSONObject(object: JSONValue): object is JSONObject {
-  return typeof object === "object" && !Array.isArray(object);
+export {
+  isJSONObject,
+  JSONObject,
+  JSONValue,
+  JSONArray
 }
 
 export default function parse(text?: string) {

@@ -880,6 +880,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@bconnorwhite/json-types@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/json-types/-/json-types-1.0.1.tgz#c32c558a7b9773b509d6415ced704dc403f1dac8"
+  integrity sha512-dHgBW4DYbna4858ngHfPtHF/Ifb8Ah6kB/w2WoG+PjseP/zYVoyx/K01D+Yv8iwJ+l22NTBrOaK5tT5n3t5MhA==
+
 "@types/node@^14.0.27":
   version "14.0.27"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.27.tgz#a151873af5a5e851b51b3b065c9e63390a9e0eb1"

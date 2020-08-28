@@ -1,5 +1,5 @@
 # parse-json-object
-![dependencies](https://img.shields.io/david/parse-json-object)
+![dependencies](https://img.shields.io/david/bconnorwhite/parse-json-object)
 ![typescript](https://img.shields.io/github/languages/top/bconnorwhite/parse-json-object)
 ![npm](https://img.shields.io/npm/v/parse-json-object)
 
@@ -14,22 +14,22 @@ yarn add parse-json-object
 
 ## API
 ```ts
-import parse, { isJSONObject } from "parse-json-object";
+import parse, { isJSONObject, JSONObject, JSONValue, JSONArray } from "parse-json-object";
 
-parse(json: string) => JSONObject | undefined;
+parse(json?: string) => JSONObject | undefined;
 
-isJSONObject(json: JSONValue) => boolean;
+isJSONObject(json?: JSONValue) => boolean;
 
 ```
 
 ### Types
 ```ts
 type JSONObject = {
-    [x: string]: string | number | boolean | JSONObject | JSONArray | null | undefined;
-}
+  [key in string]?: JSONValue
+};
 
 type JSONValue = string | number | boolean | null | JSONObject | JSONArray;
 
-interface JSONArray extends Array<JSONValue> {}
+interface JSONArray extends Array<JSONValue> {};
 ```
 
