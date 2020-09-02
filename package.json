@@ -2,7 +2,7 @@
   "name": "parse-json-object",
   "version": "1.0.3",
   "description": "Parse a typed JSON object.",
-  "author": "Connor White",
+  "author": "Connor White <connor.bcw@gmail.com>",
   "license": "MIT",
   "keywords": [
     "safe",
@@ -11,6 +11,7 @@
     "typed",
     "object"
   ],
+  "homepage": "https://connorwhite.org/github/parse-json-object",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bconnorwhite/parse-json-object.git"
