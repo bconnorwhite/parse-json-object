@@ -1,6 +1,6 @@
 {
   "name": "parse-json-object",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Parse a typed JSON object.",
   "author": "Connor White <connor.bcw@gmail.com>",
   "license": "MIT",
