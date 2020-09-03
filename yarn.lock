@@ -995,10 +995,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@bconnorwhite/bob@^1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@bconnorwhite/bob/-/bob-1.9.6.tgz#ac65070d4f742fa229c2f0a570d52cefa1ed213e"
-  integrity sha512-yxoD6jB9Pe1/9OF0DkvDagIjsqGEMTKlIFDfxxdSgiN08RGgKuQGqNYMn9laNo6rPVBpp3ZGIy96+Qhai5dv8w==
+"@bconnorwhite/bob@^1.9.7":
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/bob/-/bob-1.9.7.tgz#2d70e6ee06a2b863df189784c6620747891e7119"
+  integrity sha512-B9guezNsAZ735UZvhK7noEsqJjKLSNPVPIOnKru/CHGKN8Nl/nQsqL/qJzivBbuBBg8Fp+aXQiu9Nt2WFpPylg==
   dependencies:
     "@babel/cli" "^7.10.5"
     "@babel/core" "^7.10.5"
@@ -1034,6 +1034,11 @@
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@bconnorwhite/json-types/-/json-types-1.0.2.tgz#6ad5d379ef04ad4eb37442b97f7113b994d44675"
   integrity sha512-XQG8O9wVYdIGvIAkePDy9vI95yRHywPXsUE/SsX+Lu8AXNB9WtAsW86he71MFsZed94UOL1h5j6GALO328C5SA==
+
+"@bconnorwhite/json-types@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/json-types/-/json-types-1.0.5.tgz#c638604ac07f326e74f0b082d34964e8baf6e75c"
+  integrity sha512-GyVHRWM0Q+PmY7Hicd4l8J2fpsWtb/o1UxsVuzJ8M0SLfpiTuNkak3iA4zCCg66jLnxt6SFEba8oHVRa0CJbeg==
 
 "@bconnorwhite/module@^1.0.4":
   version "1.0.4"
