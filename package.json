@@ -19,7 +19,8 @@
   "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "postversion": "git push"
   },
   "dependencies": {
     "@bconnorwhite/json-types": "^1.0.5"
