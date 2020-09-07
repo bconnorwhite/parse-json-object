@@ -11,9 +11,9 @@
     "typed",
     "object"
   ],
-  "homepage": "https://connorwhite.org/github/parse-json-object",
-  "repository": {
-    "type": "git",
+  "files": [
+    "build"
+  ],
     "url": "git+https://github.com/bconnorwhite/parse-json-object.git"
   },
   "main": "./build/index.js",
