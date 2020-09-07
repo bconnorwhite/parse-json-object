@@ -1,11 +1,11 @@
 import { isJSONObject, JSONObject, JSONValue, JSONArray } from "types-json";
 
-export default function parse(text?: string) {
+export default function parse<T extends JSONObject>(text?: string): T | undefined {
   if(text) {
     try {
       const json = JSON.parse(text);
       if(isJSONObject(json)) {
-        return json;
+        return json as T;
       } else {
         return undefined;
       }
