@@ -36,21 +36,31 @@ npm install parse-json-object
 ### Types
 ```ts
 import parse, {
-  isJSONObject,
+  parseJSONValue,
+  parseJSONObject,
+  parseJSONArray,
+  parseString,
+  JSONValue,
   JSONObject,
   JSONValue,
   JSONArray
 } from "parse-json-object";
 
-function parse<T extends JSONObject>(json?: string) => T | undefined;
+function parse<T extends JSONValue>(value: string | undefined, isType: (value: T) => boolean): T | undefined;
 
-function isJSONObject(object?: JSONValue): object is JSONObject;
+function parseJSONValue<T extends JSONValue>(value?: string): T | undefined;
+
+function parseJSONObject<T extends JSONObject>(value?: string): T | undefined;
+
+function parseJSONArray<T extends JSONArray>(value?: string): T | undefined;
+
+function parseString<T extends string>(value?: string): T | undefined;
+
+type JSONValue = string | number | boolean | null | JSONObject | JSONArray;
 
 type JSONObject = {
   [key in string]?: JSONValue
 };
-
-type JSONValue = string | number | boolean | null | JSONObject | JSONArray;
 
 interface JSONArray extends Array<JSONValue> {};
 ```
