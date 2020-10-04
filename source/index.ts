@@ -9,7 +9,7 @@ export function parse<T extends JSONValue>(text: string | undefined, isType: (va
       } else {
         return undefined;
       }
-    } catch(e) {
+    } catch(err) {
       return undefined;
     }
   } else {
