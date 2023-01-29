@@ -1,13 +1,15 @@
-import { isJSONObject, isJSONValue, isJSONArray, isString, JSONObject, JSONValue, JSONArray } from "types-json";
+import { isJSONObject, isJSONValue, isJSONArray, isString, JSONValue } from "types-json";
+import z from "zod";
+import { validate } from "is-zod";
 
-export function parse<T extends JSONValue>(text: string | undefined, isType: (value?: T) => boolean): T | undefined {
+export function parse<T extends JSONValue>(text: string | undefined, validator: ReturnType<typeof validate<T>> | z.ZodSchema<T>): T | undefined {
   if(text) {
     try {
       const json = JSON.parse(text);
-      if(isType(json)) {
-        return json as T;
+      if(typeof validator === "function") {
+        return validator(json) ? json as T : undefined;
       } else {
-        return undefined;
+        return validate(validator)(json) ? json as T : undefined;
       }
     } catch(err) {
       return undefined;
@@ -17,20 +19,18 @@ export function parse<T extends JSONValue>(text: string | undefined, isType: (va
   }
 }
 
-export function parseJSONValue<T extends JSONValue>(text?: string): T | undefined {
-  return parse<T>(text, isJSONValue);
+export function parseJSONValue(text?: string) {
+  return parse(text, isJSONValue);
 }
 
-export function parseJSONObject<T extends JSONObject>(text?: string): T | undefined {
-  return parse<T>(text, isJSONObject);
+export function parseJSONObject(text?: string) {
+  return parse(text, isJSONObject);
 }
 
-export function parseJSONArray<T extends JSONArray>(text?: string): T | undefined {
-  return parse<T>(text, isJSONArray);
+export function parseJSONArray(text?: string) {
+  return parse(text, isJSONArray);
 }
 
-export function parseString<T extends string>(text?: string): T | undefined {
-  return parse<T>(text, isString);
+export function parseString(text?: string) {
+  return parse(text, isString);
 }
-
-export * from "types-json";
