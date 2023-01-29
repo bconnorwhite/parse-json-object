@@ -1,3 +1,13 @@
+## [3.0.1](https://github.com/bconnorwhite/parse-json-object/compare/v3.0.0...v3.0.1) (2023-01-29)
+
+
+### Bug Fixes
+
+* adjust types ([83320fc](https://github.com/bconnorwhite/parse-json-object/commit/83320fc17389109e4c407a4f1d28af7a18990c4a))
+* reexport types-json types ([1e2f64c](https://github.com/bconnorwhite/parse-json-object/commit/1e2f64cf7faf842771b37bf8cd0c17c7d0f0ca61))
+
+
+
 # [3.0.0](https://github.com/bconnorwhite/parse-json-object/compare/v2.0.1...v3.0.0) (2023-01-29)
 
 
