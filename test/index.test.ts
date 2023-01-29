@@ -1,5 +1,7 @@
 import { test, expect } from "@jest/globals";
-import { parse, parseJSONValue, parseJSONObject, parseJSONArray, parseString, isJSONArray } from "../source";
+import { isJSONArray } from "types-json";
+import z from "zod";
+import { parse, parseJSONValue, parseJSONObject, parseJSONArray, parseString } from "../source/index.js";
 
 test("parse invalid", () => {
   expect(parse('{"ok":true}', isJSONArray)).toBe(undefined);
@@ -35,4 +37,20 @@ test("parseJSONArray", () => {
 
 test("parseString", () => {
   expect(parseString('"ok"')).toBe("ok");
+});
+
+test("zod success", () => {
+  const schema = z.object({
+    a: z.string(),
+    b: z.number()
+  });
+  expect(parse('{"a":"ok","b":1}', schema)).toEqual({ a: "ok", b: 1 });
+});
+
+test("zod fail", () => {
+  const schema = z.object({
+    a: z.string(),
+    b: z.string()
+  });
+  expect(parse('{"a":"ok","b":1}', schema)).toEqual(undefined);
 });
