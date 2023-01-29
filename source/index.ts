@@ -36,3 +36,5 @@ export function parseJSONArray(text?: string) {
 export function parseString(text?: string) {
   return parse(text, isString);
 }
+
+export type { JSONValue, JSONObject, JSONArray } from "types-json";
