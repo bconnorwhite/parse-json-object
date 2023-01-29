@@ -2,7 +2,9 @@ import { isJSONObject, isJSONValue, isJSONArray, isString, JSONValue } from "typ
 import z from "zod";
 import { validate } from "is-zod";
 
-export function parse<T extends JSONValue>(text: string | undefined, validator: ReturnType<typeof validate<T>> | z.ZodSchema<T>): T | undefined {
+export type ValidateFunction<T extends JSONValue> = (value: JSONValue) => value is T;
+
+export function parse<T extends JSONValue>(text: string | undefined, validator: ValidateFunction<T> | z.ZodSchema<T>): T | undefined {
   if(text) {
     try {
       const json = JSON.parse(text);
