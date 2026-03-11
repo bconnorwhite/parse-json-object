@@ -2,7 +2,7 @@ import { isJSONArray, isJSONObject, isJSONValue, isString, type JSONValue } from
 import type { ZodSchema } from "zod";
 import { validate } from "is-zod";
 
-export type ValidateFunction<T extends JSONValue> = (value: unknown) => value is T;
+export type ValidateFunction<T extends JSONValue> = (value: JSONValue) => value is T;
 
 export function parse<T extends JSONValue>(
   text: string | undefined,
@@ -10,7 +10,7 @@ export function parse<T extends JSONValue>(
 ): T | undefined {
   if(text) {
     try {
-      const json: unknown = JSON.parse(text);
+      const json: JSONValue = JSON.parse(text);
       if(typeof validator === "function") {
         return validator(json) ? json : undefined;
       } else {
