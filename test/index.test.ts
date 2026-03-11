@@ -1,7 +1,7 @@
-import { test, expect } from "@jest/globals";
+import { expect, test } from "vitest";
 import { isJSONArray } from "types-json";
 import z from "zod";
-import { parse, parseJSONValue, parseJSONObject, parseJSONArray, parseString } from "../source/index.js";
+import { parse, parseJSONValue, parseJSONObject, parseJSONArray, parseString } from "../src/index.js";
 
 test("parse invalid", () => {
   expect(parse('{"ok":true}', isJSONArray)).toBe(undefined);

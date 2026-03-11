@@ -7,45 +7,69 @@
   <a href="https://github.com/bconnorwhite/parse-json-object">
     <img alt="TypeScript" src="https://img.shields.io/github/languages/top/bconnorwhite/parse-json-object.svg">
   </a>
-  <a href="https://coveralls.io/github/bconnorwhite/parse-json-object?branch=master">
-    <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/parse-json-object.svg?branch=master">
-  </a>
 </div>
 
 <br />
 
 <blockquote align="center">Parse a typed JSON object.</blockquote>
 
-<br />
-
-_If I should maintain this repo, please ⭐️_
-<a href="https://github.com/bconnorwhite/parse-json-object">
-  <img align="right" alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/parse-json-object?label=%E2%AD%90%EF%B8%8F&style=social">
-</a>
-
-_DM me on [Twitter](https://twitter.com/bconnorwhite) if you have questions or suggestions._
-<a href="https://twitter.com/bconnorwhite">
-  <img align="right" alt="Twitter" src="https://img.shields.io/twitter/url?label=%40bconnorwhite&style=social&url=https%3A%2F%2Ftwitter.com%2Fbconnorwhite">
-</a>
-
 ---
 <!--END HEADER-->
-- Returns `undefined` if unable to parse
-- Returns value if successful
 
+<!-- BEGIN INSTALLATION -->
 ## Installation
 
-```sh
-yarn add parse-json-object
-```
+<details open>
+  <summary>
+    <a href="https://www.npmjs.com/package/parse-json-object">
+      <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white" alt="NPM" />
+    </a>
+  </summary>
 
 ```sh
 npm install parse-json-object
 ```
 
+</details>
+
+<details>
+  <summary>
+    <a href="https://yarnpkg.com/package/parse-json-object">
+      <img src="https://img.shields.io/badge/yarn-2C8EBB?logo=yarn&logoColor=white" alt="Yarn" />
+    </a>
+  </summary>
+
+```sh
+yarn add parse-json-object
+```
+
+</details>
+
+<details>
+  <summary>
+    <img src="https://img.shields.io/badge/pnpm-F69220?logo=pnpm&logoColor=white" alt="PNPM" />
+  </summary>
+
 ```sh
 pnpm add parse-json-object
 ```
+
+</details>
+
+<details>
+  <summary>
+    <img src="https://img.shields.io/badge/bun-EE81C3?logo=bun&logoColor=white" alt="Bun" />
+  </summary>
+
+```sh
+bun add parse-json-object
+```
+
+</details>
+<!-- END INSTALLATION -->
+
+- Returns `undefined` if unable to parse
+- Returns value if successful
 
 ## Usage
 
@@ -93,34 +117,20 @@ parse("1", isNumber); // 1
 parse("not a number", isNumber); // undefined
 ```
 
-<!--BEGIN FOOTER-->
-
-<br />
-
-<h2 id="dependencies">Dependencies<a href="https://www.npmjs.com/package/parse-json-object?activeTab=dependencies"><img align="right" alt="dependencies" src="https://img.shields.io/librariesio/release/npm/parse-json-object.svg"></a></h2>
-
-- [is-zod](https://www.npmjs.com/package/is-zod): Typeguard to check if a value matches a zod schema
-- [types-json](https://www.npmjs.com/package/types-json): Type checking for JSON values
-
-
-<br />
-
-<h3>Dev Dependencies</h3>
-
-- [autorepo](https://www.npmjs.com/package/autorepo): Autorepo abstracts away your dev dependencies, providing a single command to run all of your scripts.
-- [zod](https://www.npmjs.com/package/zod): TypeScript-first schema declaration and validation library with static type inference
-
-
-<br />
-
-<h2 id="license">License <a href="https://opensource.org/licenses/MIT"><img align="right" alt="license" src="https://img.shields.io/npm/l/parse-json-object.svg"></a></h2>
-
-[MIT](https://opensource.org/licenses/MIT)
-<!--END FOOTER-->
-
 <br />
 
 ## Related Packages:
 
 - [stringify-json-object](https://www.npmjs.com/package/stringify-json-object): Stringify and format a JSON object
 - [types-json](https://www.npmjs.com/package/types-json): Type checking for JSON objects
+
+<!--BEGIN FOOTER-->
+<h2 id="dependencies">Dependencies<a href="https://www.npmjs.com/package/parse-json-object?activeTab=dependencies"><img align="right" alt="dependencies" src="https://img.shields.io/librariesio/release/npm/parse-json-object.svg"></a></h2>
+
+- [is-zod](https://www.npmjs.com/package/is-zod): Typeguard to check if a value matches a zod schema
+- [types-json](https://www.npmjs.com/package/types-json): Type checking for JSON values
+
+<h2 id="license">License <a href="https://opensource.org/licenses/MIT"><img align="right" alt="license" src="https://img.shields.io/npm/l/parse-json-object.svg"></a></h2>
+
+[MIT](https://opensource.org/licenses/MIT) - _MIT License_
+<!--END FOOTER-->
